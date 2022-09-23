@@ -73,9 +73,27 @@ table {
     height: 5rem;
     width: 76%;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .clients-logo{
     max-width: 100%;
     height: auto;
 }
-
+.client--container__logo{
+    width: 20%;
+}
+.client__left{
+    background-color: tomato;
+    width: 50%;
+    height: auto;
+}
+.client__right{
+    background-color: green;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
