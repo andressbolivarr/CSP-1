@@ -50,18 +50,24 @@ table {
 
 
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: #7D8589;
+}
 
 
 /* Clients */
 .clients{
-    background-color: blue;
+    /* background-color: blue; */
     height: 19.5rem;
     display: grid;
     align-items: center;
 }
 .client--container{
-    background-color: mediumturquoise;
+    /* background-color: mediumturquoise; */
     height: 14.25rem;
     width: 76%;
     margin: auto;
@@ -69,7 +75,7 @@ table {
     align-items: center;
 }
 .client--content{
-    background-color: orange;
+    /* background-color: orange; */
     height: 5rem;
     width: 76%;
     margin: auto;
@@ -85,12 +91,12 @@ table {
     width: 20%;
 }
 .client__left{
-    background-color: tomato;
+    /* background-color: tomato; */
     width: 50%;
     height: auto;
 }
 .client__right{
-    background-color: green;
+    /* background-color: green; */
     width: 50%;
     height: auto;
     display: flex;
