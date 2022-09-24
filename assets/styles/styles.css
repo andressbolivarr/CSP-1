@@ -103,3 +103,42 @@ p{
     flex-direction: column;
     align-items: flex-end;
 }
+
+
+/* Works */
+
+.work{
+    height: 36rem;
+    background-color: midnightblue;
+}
+.work--container{
+    height: 90%;
+    background-color: blanchedalmond;
+}
+.work--top{
+    background-color: rgb(81, 67, 84);
+    height: 30%;
+}
+
+
+
+.work--bottom{
+    background-color: violet;
+    height: 70%;
+}
+.work--bottom__card{
+    background-color: red;
+    height: 80%;
+}
+.card--contaienr{
+    background-color: olive;
+    height: 80%;
+}
+.icon--container{
+    background-color: aqua;
+    height: 80%;
+}
+.icon{
+    max-width: 100%;
+    height: auto;
+}
