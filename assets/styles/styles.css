@@ -1,81 +1,165 @@
-/* CSS Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins';
+}
 
+.header {
+    width: 100%;
+    height: 736px;
+    background-color: #E6F0FF;
+}
 
+.header .header_nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
 
+.header .header_nav .nav_logo-container {
+   width: 230px; 
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-right: 80px;
+}
 
+.header .header_nav .nav_logo-container img {
+    width: 107px;
+    height: 24px;
+}
 
-/* Clients */
-.clients{
-    background-color: blue;
-    height: 19.5rem;
-    display: grid;
+.header_nav .nav_link-container {
+    width: 400px;
+    height: 100%;
+}
+
+.header_nav .nav_link-container ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.header_nav .nav_link-container ul a {
+    text-decoration: none;
+    color: #4F5361;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.header_nav .nav_button-container {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header_nav .nav_button-container div {
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.client--container{
-    background-color: mediumturquoise;
-    height: 14.25rem;
-    width: 76%;
-    margin: auto;
-    display: grid;
-    align-items: center;
-}
-.client--content{
-    background-color: orange;
-    height: 5rem;
-    width: 76%;
-    margin: auto;
-}
-.clients-logo{
-    max-width: 100%;
-    height: auto;
+
+.header_nav .nav_button-container div a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #0F1B4C;
+    font-size: 1.1rem;
 }
 
+.header_nav .nav_button-container button {
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #0F1B4C;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 0px;
+}
+
+.header_nav .nav_button-container button:active {
+    transform: translateY(1.3px);
+}
+
+.header .header_section {
+    width: 100%;
+    height: 666px;
+    display: flex;
+}
+
+.header .header_section .text-container {
+    width: 50%;
+    height: 100%;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header .header_section .text-container h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #687691;
+}
+
+.header .header_section .text-container h1 {
+    font-weight: 700;
+    font-size: 5.7rem;
+    color: #000336;
+}
+
+.header .header_section .text-container p {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #5A6473;
+    margin: 20px 0;
+}
+
+.header .header_section .text-container button {
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #0F1B4C;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 0px;
+}
+
+.header .header_section .text-container button:active {
+    transform: translateY(1.3px);
+}
+
+.header .header_section .img-container {
+    width: 50%;
+    height: 100%;
+    padding-right: 100px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.header .header_section .img-container img {
+    width: 100%;
+    height: 100%;
+}
